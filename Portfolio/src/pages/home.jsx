@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "../App.css";
-import { NavBar } from "../components/navbar";
+// import { NavBar } from "../components/navbar";
 import { Banner } from "../components/Banner";
 import Cards from "../components/card";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +19,7 @@ import Weather from "../assets/Weather.png"
 export default function Home() {
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <Container>
         <Row>
           <Col>

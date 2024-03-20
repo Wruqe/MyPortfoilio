@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import classes from './styles.module.css';
 
-export const NavBar = () => {
+export  const MyNavBar = () => {
     const [Link, NewLink] = useState('home')
     const [scrolled, setScrolled] = useState(false)
 
@@ -33,7 +33,7 @@ const onNewLink = (value) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={Link === "home" ? 'active navbar-link' : 'navbarLink'}onClick={() => onNewLink('home')}>Home</Nav.Link>
+            <Nav.Link href="/" className={Link === "home" ? 'active navbar-link' : 'navbarLink'}onClick={() => onNewLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={Link === "skills" ? 'active navbar-link' : 'navbarLink'}onClick={() => onNewLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={Link === "projects" ? 'active navbar-link' : 'navbarLink'}onClick={() => onNewLink('projects')}>Projects</Nav.Link>
 
